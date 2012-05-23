@@ -9,8 +9,8 @@ Trying YUI3 for mobile web app protyping
 
 Apache:
 
-   ProxyRequests Off
-   ProxyPass /yui/combo http://gray-cloud:3000
-   ProxyPassReverse /yui/combo http://gray-cloud:3000
+    ProxyRequests Off
+    ProxyPass /yui/combo http://gray-cloud:3000
+    ProxyPassReverse /yui/combo http://gray-cloud:3000
 
 
