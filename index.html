@@ -1,0 +1,15 @@
+<!doctype html>
+<title>Gray Cloud</title>
+<h1>Hello World!</h1>
+<script src="/yui/combo/yui3?build/yui/yui-min.js"></script>
+<script>
+  YUI({
+    comboBase: '/yui/combo/yui3?',
+    combine  : true,
+    root     : 'build/'
+    }).use('node', function (Y) {
+    // YUI will now automatically load modules from the custom combo handler.
+  });
+</script>
+
+
