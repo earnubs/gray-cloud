@@ -1,6 +1,9 @@
-[submodule "src/yui3"]
-	path = src/yui3
+[submodule "yui3"]
+	path = yui3
 	url = http://github.com/yui/yui3
-[submodule "src/yui3-gallery"]
-	path = src/yui3-gallery
+[submodule "yui3-gallery"]
+	path = yui3-gallery
 	url = http://github.com/yui/yui3-gallery
+[submodule "builder"]
+	path = builder
+	url = https://github.com/yui/builder.git
