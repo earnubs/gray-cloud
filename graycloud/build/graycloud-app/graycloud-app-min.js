@@ -1,0 +1,1 @@
+YUI.add("graycloud-app",function(b){var a=new b.Router({root:"/",routes:[{path:"/",callback:function(){alert("Hello World.");}},{path:"/foo",callback:function(){alert("Hello Foo");}}]});a.dispatch();},"@VERSION@",{requires:["app"]});

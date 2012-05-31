@@ -1,0 +1,9 @@
+RewriteEngine  on
+
+RewriteRule yui/combo/(.*)$ http://localhost:3000/$1 [P]
+
+RewriteBase /~stephenstewart/gray-cloud/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !index
+RewriteRule (.*) index.html [L]

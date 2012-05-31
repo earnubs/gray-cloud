@@ -1,14 +1,44 @@
 <!doctype html>
 <title>Gray Cloud</title>
+<meta name=viewport content='width=device-width'>
+<meta name=apple-mobile-web-app-capable content=yes>
+<meta name=apple-mobile-web-app-status-bar-style content=black-translucent>
+<!-- could also use precomposed images, could also do without meta and let ios find these itself -->
+<link rel=apple-touch-icon sizes='72x72' href='assets/icons/apple-touch-icon-72x72.png'>
+<link rel=apple-touch-icon sizes='114x114' href='assets/icons/apple-touch-icon-114x114.png'>
+<link rel=apple-touch-icon href='assets/icons/apple-touch-icon-57x57.png'>
+<link rel=apple-touch-startup-image href='assets/icons/splash-startup.png'>
+
 <h1>Hello World!</h1>
-<script src="/yui/combo/yui3?build/yui/yui-min.js"></script>
+<script src="/~stephenstewart/gray-cloud/yui/combo/yui3?build/yui/yui-min.js"></script>
 <script>
   YUI({
-    comboBase: '/yui/combo/yui3?',
-    combine  : true,
-    root     : 'build/'
-    }).use('node', function (Y) {
+    comboBase: '/~stephenstewart/gray-cloud/yui/combo/yui3?',
+    combine: true,
+    root: 'build/',
+    groups: {
+      gallery: {
+        comboBase: '/~stephenstewart/gray-cloud/yui/combo/yui3-gallery?',
+        combine: true,
+        root:      'build/',
+        patterns: {
+          "gallery-":    {},
+          "gallerycss-": { type: "css" }
+        }   
+      },  
+      graycloud: {
+        comboBase: '/~stephenstewart/gray-cloud/yui/combo/graycloud?',
+        combine: true,
+        root:      'build/',
+        patterns: {
+          "graycloud-":    {},
+          "graycloudcss-": { type: "css" }
+        }   
+      }
+    }
+    }).use('graycloud-app', function (Y) {
     // YUI will now automatically load modules from the custom combo handler.
+    Y.log('hi');
   });
 </script>
 
