@@ -1,5 +1,4 @@
 RewriteEngine  on
-
 RewriteRule yui/combo/(.*)$ http://localhost:3000/$1 [P]
 
 RewriteBase /~stephenstewart/gray-cloud/
