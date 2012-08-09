@@ -1,13 +1,9 @@
 gray-cloud
 ==========
 
-Personal YUI3 playground...
+Personal locally hosted YUI3 playground using own fork of gallery...
 
-    git submodule add http://github.com/yui/yui3 yui3
-    ~~git submodule add http://github.com/yui/yui3-gallery yui3-gallery~~
-    git submodule add https://github.com/yui/builder.git builder
-
-Apache:
+Apache config:
 
     ProxyRequests Off
     ProxyPass /yui/combo http://gray-cloud:3000
