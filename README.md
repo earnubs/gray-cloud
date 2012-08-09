@@ -4,7 +4,7 @@ gray-cloud
 Personal YUI3 playground...
 
     git submodule add http://github.com/yui/yui3 yui3
-    <s>git submodule add http://github.com/yui/yui3-gallery yui3-gallery</s>
+    ~~git submodule add http://github.com/yui/yui3-gallery yui3-gallery~~
     git submodule add https://github.com/yui/builder.git builder
 
 Apache:
